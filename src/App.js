@@ -1,9 +1,16 @@
 import React from 'react';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import Missions from './components/Missions';
 
 function App() {
   return (
     <div className="App">
-      <h1>Space Travelers&apos; Hub</h1>
+      <Header />
+      <div>
+        <Missions />
+      </div>
+      <Footer />
     </div>
   );
 }
