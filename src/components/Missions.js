@@ -1,6 +1,6 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { joinMission, leaveMission } from '../redux/Missions/missionsSlice';
+import { joinMission, leaveMission } from '../redux/missions/missionsSlice';
 
 export default function Missions() {
   const { missions } = useSelector((state) => state.missions);
