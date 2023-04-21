@@ -1,8 +1,10 @@
 import React from 'react';
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
+import { joinMission, leaveMission } from '../redux/missions/missionsSlice';
 
 export default function Missions() {
   const { missions } = useSelector((state) => state.missions);
+  const dispatch = useDispatch();
 
   return (
     <div className="bg-black/25">
@@ -32,12 +34,34 @@ export default function Missions() {
                   <p>{mission.description}</p>
                 </div>
                 <div className="flex items-center w-40 justify-center p-4">
-                  <p className="bg-blue-500 text-white rounded-sm p-1">
-                    Active Member
-                  </p>
+                  {mission.isJoined ? (
+                    <p className="bg-green-500 text-white rounded-md p-1">
+                      Active Member
+                    </p>
+                  ) : (
+                    <p className="bg-red-500 text-white rounded-md p-1">
+                      Not A Member
+                    </p>
+                  )}
                 </div>
                 <div className="flex items-center h-40 w-40 justify-center p-4 rounded-tr-md rounded-br-md">
-                  <button type="button" className="bg-red-400 text-red-800 rounded-md p-1 cursor-pointer">Leave Mission</button>
+                  {mission.isJoined ? (
+                    <button
+                      type="button"
+                      onClick={() => dispatch(leaveMission(mission.id))}
+                      className="bg-red-400 text-red-800 rounded-md p-1 cursor-pointer"
+                    >
+                      Leave Mission
+                    </button>
+                  ) : (
+                    <button
+                      type="button"
+                      onClick={() => dispatch(joinMission(mission.id))}
+                      className="bg-green-400 text-green-800 rounded-md p-1 cursor-pointer"
+                    >
+                      Join Mission
+                    </button>
+                  )}
                 </div>
               </div>
             ))}
