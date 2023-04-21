@@ -6,8 +6,8 @@ import Footer from './components/Footer';
 import Missions from './components/Missions';
 import Rockets from './components/Rockets';
 import Profile from './components/Profile';
-import { fetchRockets } from './redux/rockets/rocketsSlice';
-import { fetchMissions } from './redux/missions/missionsSlice';
+import { fetchRockets } from './redux/Rockets/rocketsSlice';
+import { fetchMissions } from './redux/Missions/missionsSlice';
 
 function App() {
   const dispatch = useDispatch();
@@ -15,7 +15,7 @@ function App() {
   useEffect(() => {
     dispatch(fetchRockets());
     dispatch(fetchMissions());
-  }, []);
+  }, [dispatch]);
 
   return (
     <div className="App">

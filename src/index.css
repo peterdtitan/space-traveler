@@ -9,3 +9,32 @@ body {
   font-family: 'Roboto Slab', serif;
   background-color: rgb(238, 237, 237);
 }
+
+.profileContainer {
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  padding: 50px;
+  gap: 550px;
+}
+
+.profileContainer h2 {
+  padding-bottom: 20px;
+  font-size: 20px;
+}
+
+.missionContainer {
+  padding-left: 40px;
+}
+
+.pmData p {
+  width: 250%;
+  border: 1px solid rgb(171, 171, 171);
+  padding: 10px;
+}
+
+.prData p {
+  width: 450%;
+  border: 1px solid rgb(171, 171, 171);
+  padding: 10px;
+}
