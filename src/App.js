@@ -6,7 +6,7 @@ import Footer from './components/Footer';
 import Missions from './components/Missions';
 import Rockets from './components/Rockets';
 import Profile from './components/Profile';
-import { fetchRockets } from './redux/Rockets/rocketsSlice';
+import { fetchRockets } from './redux/rockets/rocketsSlice';
 import { fetchMissions } from './redux/missions/missionsSlice';
 
 function App() {

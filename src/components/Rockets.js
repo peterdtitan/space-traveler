@@ -1,6 +1,6 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { bookRocket, cancelRocket } from '../redux/Rockets/rocketsSlice';
+import { bookRocket, cancelRocket } from '../redux/rockets/rocketsSlice';
 // import { bookRocket, cancelRocket } from '../redux/rockets/rocketsSlice';
 
 export default function Rockets() {
