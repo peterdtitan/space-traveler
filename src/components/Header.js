@@ -14,13 +14,13 @@ export default function Header() {
         <div className="flex gap-4 p-2 border-r-[2px] border-white">
           <NavLink
             to="/"
-            className={({ isActive }) => (isActive ? 'text-black bg-yellow-500 p-2 rounded-md' : 'text-white bg-black/80 p-2 rounded-md')}
+            className={({ isActive }) => (isActive ? 'text-yellow-500 p-2 rounded-md underline underline-offset-4' : 'text-white p-2 rounded-md')}
           >
             Rockets
           </NavLink>
           <NavLink
             to="/missions"
-            className={({ isActive }) => (isActive ? 'text-black bg-yellow-500 p-2 rounded-md' : 'text-white bg-black/80 p-2 rounded-md')}
+            className={({ isActive }) => (isActive ? 'text-yellow-500 p-2 rounded-md underline underline-offset-4' : 'text-white p-2 rounded-md')}
           >
             Missions
           </NavLink>
@@ -28,7 +28,7 @@ export default function Header() {
         <div className="p-2 hidden md:flex">
           <NavLink
             to="/profile"
-            className={({ isActive }) => (isActive ? 'text-black bg-yellow-500 p-2 rounded-md' : 'text-white bg-black/80 p-2 rounded-md')}
+            className={({ isActive }) => (isActive ? 'text-yellow-500 p-2 rounded-md underline underline-offset-4' : 'text-white p-2 rounded-md')}
           >
             My Profile
           </NavLink>
