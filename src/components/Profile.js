@@ -16,7 +16,7 @@ export default function Profile() {
           {joinedMissions.length > 0 ? (
             joinedMissions.map((mission) => <p key={mission.id}>{mission.name}</p>)
           ) : (
-            <p>No Missions Joined</p>
+            <p>No Missions Joined!</p>
           )}
         </div>
       </div>
@@ -26,7 +26,7 @@ export default function Profile() {
           {reservedRockets.length > 0 ? (
             reservedRockets.map((rocket) => <p key={rocket.id}>{rocket.name}</p>)
           ) : (
-            <p>No Rockets Reserved</p>
+            <p>No Rockets Reserved!</p>
           )}
         </div>
         <br />
