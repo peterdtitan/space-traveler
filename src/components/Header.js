@@ -28,7 +28,7 @@ export default function Header() {
         <div className="p-2 hidden md:flex">
           <NavLink
             to="/profile"
-            className={({ isActive }) => (isActive ? 'text-yellow-500 p-2 rounded-md underline underline-offset-4' : 'text-white p-2 rounded-md')}
+            className={({ isActive }) => (isActive ? 'text-yellow-500 p-2 rounded-md underline underline-offset-8' : 'text-white p-2 rounded-md')}
           >
             My Profile
           </NavLink>
