@@ -48,7 +48,7 @@ export const rocketsSlice = createSlice({
     },
     [fetchRockets.rejected]: (state, action) => ({
       ...state,
-      status: 'failed',
+      status: 'Failed to fetch rocket list',
       error: action.error.message,
     }),
   },

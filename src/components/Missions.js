@@ -1,11 +1,21 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { joinMission, leaveMission } from '../redux/missions/missionsSlice';
+import { joinMission, leaveMission, fetchMissions } from '../redux/missions/missionsSlice';
 
 export default function Missions() {
-  const { missions } = useSelector((state) => state.missions);
   const dispatch = useDispatch();
+  const [isLoading, setIsLoading] = useState(true);
 
+  useEffect(() => {
+    dispatch(fetchMissions());
+    setIsLoading(false);
+  }, []);
+
+  const { missions } = useSelector((state) => state.missions);
+
+  if (isLoading) {
+    return <div className="flex items-center justify-center text-3xl">Loading...</div>;
+  }
   return (
     <div className="bg-black/25">
       <div className="bg-gray-50 p-10 flex-col">

@@ -4,8 +4,12 @@ import { bookRocket, cancelRocket } from '../redux/rockets/rocketsSlice';
 
 export default function Rockets() {
   const { rockets } = useSelector((state) => state.rockets);
+  const state = useSelector((state) => state.rockets.status);
   const dispatch = useDispatch();
 
+  if (state === 'loading') {
+    return <div className="flex items-center justify-center"><p>Loading...</p></div>;
+  }
   return (
     <div className="bg-gray-50 p-10 flex-col gap-y-8">
       {rockets.length !== 0 ? (

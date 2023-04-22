@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer component renders Footer component correctly 1`] = `
+<footer
+  class="flex flex-col text-white text-xs md:text-base md:flex-row items-center justify-center bg-slate-900 gap-10 fixed bottom-0 w-screen h-10 font-montserrat"
+>
+  <div
+    class="flex gap-2 items-center"
+  >
+    <img
+      alt="logo"
+      class="w-8 invert"
+      src="planet.png"
+    />
+    <p
+      class="text-xs md:text-base"
+    >
+      Created by Microverse Inc under license
+    </p>
+  </div>
+</footer>
+`;
