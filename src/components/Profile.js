@@ -24,7 +24,7 @@ export default function Profile() {
         <h2>My Rockets</h2>
         <div className="prData">
           {reservedRockets.length > 0 ? (
-            reservedRockets.map((rocket) => <p key={rocket.id}>{rocket.name}</p>)
+            reservedRockets.map((rocket) => <p key={rocket.id}>{rocket.rocketName}</p>)
           ) : (
             <p>No Rockets Reserved!</p>
           )}
