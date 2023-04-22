@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,500;0,900;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+  font-family: 'Roboto Slab', serif;
+  background-color: rgb(238, 237, 237);
+}
+
+.profileContainer {
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  padding: 50px;
+  gap: 550px;
+}
+
+.profileContainer h2 {
+  padding-bottom: 20px;
+  font-size: 20px;
+}
+
+.missionContainer {
+  padding-left: 40px;
+}
+
+.pmData p {
+  width: 250%;
+  border: 1px solid rgb(171, 171, 171);
+  padding: 12px;
+}
+
+.prData p {
+  width: 450%;
+  border: 1px solid rgb(171, 171, 171);
+  padding: 12px;
+}

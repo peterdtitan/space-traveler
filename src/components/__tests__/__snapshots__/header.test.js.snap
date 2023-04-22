@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header component renders Header component correctly 1`] = `
+<nav
+  class="w-full flex bg-black/80 justify-center md:justify-between items-center py-4 px-6"
+>
+  <div
+    class="flex gap-2 items-center"
+  >
+    <img
+      alt="logo"
+      class="md:w-12 w-8 invert"
+      src="planet.png"
+    />
+    <h1
+      class="text-sm md:text-3xl text-white"
+    >
+      Space Travelers' Hub
+    </h1>
+  </div>
+  <div
+    class="md:flex justify-between hidden"
+  >
+    <div
+      class="flex gap-4 p-2 border-r-[2px] border-white"
+    >
+      <a
+        aria-current="page"
+        class="text-black bg-yellow-500 p-2 rounded-md"
+        href="/"
+      >
+        Rockets
+      </a>
+      <a
+        class="text-white bg-black/80 p-2 rounded-md"
+        href="/missions"
+      >
+        Missions
+      </a>
+    </div>
+    <div
+      class="p-2 hidden md:flex"
+    >
+      <a
+        class="text-white bg-black/80 p-2 rounded-md"
+        href="/profile"
+      >
+        My Profile
+      </a>
+    </div>
+  </div>
+</nav>
+`;
